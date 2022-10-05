@@ -10,7 +10,6 @@ header{
 }
 .header{
     height: 50px;
-    background-color: red;
 }
 .slider{
     flex: 1;
@@ -27,7 +26,8 @@ header{
     width: 100vw; /*pega a largura total do monitor */
     height: inherit; /*herda a altura do ultumo item */
     background-position: center;
-    background-size: cover; /*dependendo do tamanho do monitor, vai dimiuir ou aumentar */
+    background-repeat: no-repeat;
+    background-size:contain; /*dependendo do tamanho do monitor, vai dimiuir ou aumentar */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,8 +49,25 @@ header{
     width: 50px;
     height: 50px;
     cursor: pointer;
-    background-color: #fff;
-    border-radius: 50%;
+    /* background-color: #fff;
+    border-radius: 50%; */
+    color:#fff;
     overflow: hidden; /*para resolver problemas do texto ultrapassar */
 
+}
+
+nav ul,
+nav li{
+    display:flex;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    border-bottom: 1px solid #cad49d;
 }

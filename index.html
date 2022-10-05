@@ -5,25 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+                <!-- link para icones -->
+    <script src="https://kit.fontawesome.com/0518f3ccf0.js" crossoring="anonymous"> </script>
     <title>Slider</title>
 </head>
 <body>
     <header>
-        <div class="header"></div>
+        <div class="header">
+            <div class="menu">
+                <!-- <img class="menu-opener"  src="assets/img/menu.png"/> -->
+                <nav>
+                    <ul>
+                        <li><a href="">Padreadores</a></li>
+                        <li><a href="">Fêmeas</a></li>
+                        <li><a href="">Filhotes</a></li>
+                        <li><a href="">contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>        
         <div class="slider">
             <div class="slider--controls">
-                <div class="slider--control" onclick="goPrev()">voltar</div>
-                <div class="slider--control" onclick="goNext()">próximo</div>
+                <div class="slider--control" onclick="goPrev()"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="slider--control" onclick="goNext()"><i class="fa-solid fa-chevron-right"></i></div>
             </div>
             <div class="slider--width">
-                <div class="slider--item" style="background-image: url('assets/images/1.jpg');">
-                    Vida o Surf
+                <div class="slider--item" style="background-image: url('assets/images/pastor-atual.png');">
+                    Padreador
                 </div>
-                <div class="slider--item" style="background-image:url('assets/images/2.jpg'); ;">
-                    aproveite a prancha
+                <div class="slider--item" style="background-image:url('assets/images/pastor3-atual.png'); ;">
+                    Padreador
                 </div>
-                <div class="slider--item" style="background-image: url('assets/images/3.jpg');">
-                    Pegue onda
+                <div class="slider--item" style="background-image: url('assets/images/pastor4-atual.png');">
+                    Fêmea
+                </div>
+                <div class="slider--item" style="background-image: url('assets/images/belga.png');">
+                    Fêmea Belga
                 </div>
             </div>
         </div>
