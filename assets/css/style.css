@@ -10,6 +10,11 @@ header{
 }
 .header{
     height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    
 }
 .slider{
     flex: 1;
@@ -70,4 +75,31 @@ nav li{
 
 a:hover{
     border-bottom: 1px solid #cad49d;
+}
+.menu-opener{
+    display: none;
+}
+
+section h1{
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: baseline;
+}
+.section--item{
+    width:300px;
+    height: 180px; /*pega a largura total do monitor */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover; /*dependendo do tamanho do monitor, vai dimiuir ou aumentar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: #ccc;
+    cursor: pointer;
+
 }
