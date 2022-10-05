@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+header{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #ccc;
+}
+.header{
+    height: 50px;
+    background-color: red;
+}
+.slider{
+    flex: 1;
+    overflow: hidden; /* cortar o que passar da medida */
+
+}
+.slider--width{
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+
+}
+.slider--item{
+    width: 100vw; /*pega a largura total do monitor */
+    height: inherit; /*herda a altura do ultumo item */
+    background-position: center;
+    background-size: cover; /*dependendo do tamanho do monitor, vai dimiuir ou aumentar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0px 1px 1px #333;
+    font-size: 50px;
+
+}
+.slider--controls{
+    position: absolute; /*vai ficar em cima das outras, tipo, emcima das outras camadas */
+    z-index: 99; /*a cima da foto */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.slider--control{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden; /*para resolver problemas do texto ultrapassar */
+
+}
