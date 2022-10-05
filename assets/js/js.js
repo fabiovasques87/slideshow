@@ -33,3 +33,25 @@ updateMargin = ()=> {
 
 }
 setInterval(goNext,5000);
+
+
+/*responsividade */
+window.onload = function() {
+    document.querySelector(".menu-opener").addEventListener("click", function() {
+        if (document.querySelector(".menu nav ul").style.display == 'flex') {
+            document.querySelector(".menu nav ul").style.display = 'none';
+        } else {
+        document.querySelector(".menu nav ul").style.display = 'flex';
+        console.log('ok');
+        }
+    });
+};
+
+/*para o menu amburguer aparecer só com resolução menor que 600 */
+
+window.addEventListener('resize', function () {
+    var largura = window.innerWidth;
+
+    if (largura > 600)
+    document.querySelector(".menu nav ul").removeAttribute('style');
+    });

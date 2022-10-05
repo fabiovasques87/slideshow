@@ -103,3 +103,113 @@ section h1{
     cursor: pointer;
 
 }
+
+/*responsividade*/
+@media (max-width:600px){
+
+
+
+  
+    .sub-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-opener{
+        display: block;
+        width:45px;
+        margin-right: 20px;
+        
+    }
+
+    .sub-card-photoinfo{
+        position: absolute;
+        background-color: rgba(72,69,56, 0.9);
+        width:95%;
+        height:35%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-transform:uppercase;
+       
+        
+    }
+    .logo img{
+        width:110px;
+       
+       
+    }
+
+   
+    .menu nav ul {
+        
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(72,69,56, 0.9);
+        width: 80vw;
+        height: calc(100vh);
+        right: 0;
+    }
+    
+    .menu ul{
+
+        flex-direction: column;
+    }
+
+    .boas-vindas h4{
+        font-size: 12px;
+        text-align: justify;
+        padding-right: 5px;
+        padding-left: 5px;
+        
+    }
+
+    .boas-vindas h3{
+        font-size: 16px;
+        text-align: justify;
+        padding-right: 5px;
+        padding-left: 5px;
+        text-transform:uppercase;
+        
+        
+    }
+
+    .card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+   
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer{
+        height:50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer, .footer-icones{
+        font-size: 12px;
+       
+    }
+
+    .footer a{
+        color:#fff;
+    }
+
+    .footer, .fa-solid, .fa-brands{
+        font-size:20px;
+    }
+
+}
