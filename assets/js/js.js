@@ -35,6 +35,7 @@ updateMargin = ()=> {
 setInterval(goNext,5000);
 
 
+
 /*responsividade */
 window.onload = function() {
     document.querySelector(".menu-opener").addEventListener("click", function() {

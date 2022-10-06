@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Contato</title>
+</head>
+<body>
+    
+    <div  class="screen">
+        <div class="screen--left" style="background-image:url('assets/images/pastor-atual.png');">
+            ...
+        </div>
+        <div class="screen--right">
+            <form action="teste.php" method="post"  class="b7validator">
+                <label for="">Insira seu nome
+                    <input type="text" name="nome" placeholder="nome" autocomplete="off" data-rules="required|min=5" />
+                </label>    
+                <label for="">Insira seu e-mail
+                    <input type="text" name="email" placeholder="email" autocomplete="off" data-rules="required|email">
+                </label> 
+                <label for="">Insira sua senha
+                     <input type="password" name="senha" placeholder="senha" autocomplete="off" data-rules="required|min=6">
+                </label>
+                <input type="submit" value="Entrar">
+
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/validator.js"></script>
+    <script src="assets/js/js.js"></script>
+</body>
+</html>

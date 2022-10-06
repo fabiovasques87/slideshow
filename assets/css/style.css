@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
 }
@@ -104,6 +108,57 @@ section h1{
 
 }
 
+/*validando a tela de login */
+
+.screen{
+    display: flex;
+    height: 100vh;
+}
+
+.screen--left{
+    background-color: #fff;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.screen--right{
+    flex:1;
+    padding: 200px;
+    background-color: #ccc;
+}
+
+.screen--right label{
+    display: block;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.screen--right input{
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+    padding: 12px;
+    width: 100%;
+    font-size: 14px;
+    outline: 0;
+
+}
+
+/*estilizar o error*/
+.error{
+    font-size: 11px;
+    background-color: red;
+    color: #fff;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+
 /*responsividade*/
 @media (max-width:600px){
 
@@ -150,8 +205,10 @@ section h1{
         z-index: 99;
         background-color: rgba(72,69,56, 0.9);
         width: 80vw;
-        height: calc(100vh);
+        /* height: calc(100vh); */
+        height: 1100px;
         right: 0;
+        top: 32px;
     }
     
     .menu ul{
